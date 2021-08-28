@@ -15,17 +15,27 @@ const Header = () => {
     <>
       <header>
         <div className="container mx-auto px-6 py-3">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center  z-20 top-0 justify-between w-full p-2 shadow rounded-xl ">
+            <Link href="/">
+              <div className="m-3 cursor-pointer">
+                <img
+                  src="https://image.flaticon.com/icons/png/512/2917/2917995.png"
+                  alt=""
+                  width="100"
+                />
+              </div>
+            </Link>
+
             <Link href="/">
               <div className="w-full text-green-500 text-2xl font-semibold cursor-pointer">
                 Tech Wear Store
               </div>
             </Link>
             <div className="flex items-center justify-end w-full">
-              <button className="text-gray-600 focus:outline-none mx-4 sm:mx-0">
+              <button className="text-gray-600 focus:outline-none pr-3 mx-4 sm:mx-0">
                 <ShoppingCartIcon
                   onClick={() => setIsCartOpen(!isCartOpen)}
-                  className="h-5 w-5"
+                  className="h-8 w-8 "
                 />
               </button>
 
